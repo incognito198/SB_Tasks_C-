@@ -32,8 +32,8 @@ void FindOddOrEvenNumbers(int CycleTwoLimit = 0, bool IsOdd = false)
         MaximumValue = std::stoi(SecondValueString);
     }
 
-    CycleTwoLimit = rand() % (MaximumValue - MinimumValue + 1) + MinimumValue;
-        IsOdd = (CycleTwoLimit % 2 == 0);
+    CycleTwoLimit = rand() % (MaximumValue - MinimumValue + 1) + MinimumValue; //Реализуем рандомайзер (слямзено с интернета, но, вроде, понято)
+        IsOdd = (CycleTwoLimit % 2 == 0); //Инициилизируем переменную, отвечающую за вывод четных, либо нечетных чисел
         std::cout << "Великий рандом решил выбрать число " << CycleTwoLimit << " в качестве предела второго цикла " << '\n';
         std::cout << "Цикл пройдет от " << MinimumValue << " до " << CycleTwoLimit << '\n';
         std::cout << "Выводить будем ";
